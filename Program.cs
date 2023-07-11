@@ -16,7 +16,7 @@ namespace RBX_Downgrader
             {
                 string[] bundles = new string[1000]; // haha cant wait for a memory leak (or not)
                 string[] allowed_bundles = {
-                    "582",
+                    // "582", patched on almost all exploits
                     "581",
                     "578"
                 };
