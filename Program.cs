@@ -27,25 +27,38 @@ namespace RBX_Downgrader
 
                 Console.Title = "RBX Downgrader";
 
-                var y_n_uninstall_warning = AnsiConsole.Prompt(
-                    new SelectionPrompt<string>()
-                        .Title("[bold yellow]Warning![/] This program will uninstall your current version of roblox, this is a required step for downgrading roblox, do you wish to continue?\n\n[grey]use arrow keys![/]")
-                        .PageSize(10)
-                        .AddChoices(new[] { "Yes", "No" }));
+                bool rbx_installed = false;
 
-                if (y_n_uninstall_warning == "No") Environment.Exit(0);
-
-                ps.execute("Get-AppxPackage | Where-Object { $_.Name -like '*blox*' } | Remove-AppxPackage", (string data) =>
+                ps.execute("Get-AppxPackage | Where-Object { $_.Name -like '*blox*' }", (string data) =>
                 {
                     if (data != "")
                     {
-                        throw new Exception($"Possible error: {data}");
+                        rbx_installed = true;
                     }
                 });
 
-                AnsiConsole.Clear();
+                if (rbx_installed)
+                {
+                    var y_n_uninstall_warning = AnsiConsole.Prompt(
+                        new SelectionPrompt<string>()
+                            .Title("[bold yellow]Warning![/] This program will uninstall your current version of roblox, this is a required step for downgrading roblox, do you wish to continue?\n\n[grey]use arrow keys![/]")
+                            .PageSize(10)
+                            .AddChoices(new[] { "Yes", "No" }));
 
-                AnsiConsole.Markup("[green]Successfully Uninstalled roblox[/]\n\n");
+                    if (y_n_uninstall_warning == "No") Environment.Exit(0);
+
+                    ps.execute("Get-AppxPackage | Where-Object { $_.Name -like '*blox*' } | Remove-AppxPackage", (string data) =>
+                    {
+                        if (data != "")
+                        {
+                            throw new Exception($"Possible error: {data}");
+                        }
+                    });
+
+                    AnsiConsole.Clear();
+
+                    AnsiConsole.Markup("[green]Successfully Uninstalled roblox[/]\n\n");
+                }
 
                 var chosen_bundle = AnsiConsole.Prompt(
                     new SelectionPrompt<string>()
