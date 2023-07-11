@@ -55,12 +55,13 @@ namespace RBX_Downgrader
 
                 if (!Directory.Exists("bundles")) Directory.CreateDirectory("bundles");
 
-
                 string bundle_url = bundles[int.Parse(chosen_bundle)];
                 string bundle_name = "";
 
                 int lastIndex = bundle_url.LastIndexOf("/");
-                if (lastIndex >= 0 && lastIndex < bundle_url.Length - 1) bundle_name = bundle_url.Substring(lastIndex + 1);
+                if (lastIndex >= 0 && lastIndex < bundle_url.Length - 1) bundle_name = bundle_url.Substring(lastIndex + 1).Replace("?dl=1", "");
+
+                AnsiConsole.Clear();
 
                 dl.download($"version {chosen_bundle} (this may take a while)", bundle_url, $"bundles/{bundle_name}");
 
@@ -76,7 +77,7 @@ namespace RBX_Downgrader
 
 
                 AnsiConsole.Clear();
-                AnsiConsole.Markup($"[green]Successfully downgraded to version {chosen_bundle}[/]\n[underline]Have fun playing![/]");
+                AnsiConsole.WriteLine($"Successfully downgraded to version {chosen_bundle}\nHave fun playing!");
                 File.Delete($"bundles/{bundle_name}");
                 Console.ReadLine();
             } catch (Exception ex)
