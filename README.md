@@ -1,3 +1,3 @@
 # Roblox Downgrader
 
-Simple tool to help you with downgrading roblox
+Simple tool to help you with downgrading roblox.
