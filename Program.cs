@@ -21,9 +21,9 @@ namespace RBX_Downgrader
                     "578"
                 };
 
-                bundles[582] = "https://download1337.mediafire.com/m9jdyrdsa2eg53e28px5YsCJ-ddHLphYH88uaop5W9gL7iF7o1Umrvk_aDPUg8-8KinFPQt_ZrZjD-d7FFXUcckCSI01-eZ4qJZxgHTB79oAu-GaOTxMtSo1uiQNS4drvYVtVJV25kkOwVQu5hg9BiaUj98A-BL3c7UnqjPPIq_x/mprz1vvx39h0r67/ROBLOXCORPORATION.ROBLOX_2.582.384.0_neutral_~_55nm5eh3cm0pr.Msixbundle";
-                bundles[581] = "https://download2441.mediafire.com/vkg01d4s6gdg6HgZSh85rfvIsmg-NK7Mb08Uc9SkFrZrY0Gw1hsqLIQpvxiLd1VSoUsZYsn604e7ll1LuBedE5uucvMTiExceGjarLnuotqbjSI3R_CjP6ra9s1Xr8OXGbm7Er628bGZKXp2tkUzcL_KTLzKFDfIyaUwBZqLbhvJ/3fisz87r45ao851/ROBLOXCORPORATION.ROBLOX_2.581.563.0_neutral_~_55nm5eh3cm0pr.Msixbundle";
-                bundles[578] = "https://download2293.mediafire.com/hfmectuucvvgNtQxoVFvaJ0M5SQWo0Gusa97QH5QCevmCTtKEN90k-amRrEOswhhNAqd1XdcU5U11kGreliSaFuHiyuG7q03w8TXbzNAQ97-05S_WxdjVbxgJjkHBT2iRUB46RKLL-Dc_HjGUAQQTOvbpMXb2BBWMsc9kj8fTarJ/xaxisa2v54rk8ja/ROBLOXCORPORATION.ROBLOX_2.578.564.0_neutral_~_55nm5eh3cm0pr.Msixbundle";
+                // bundles[582] = "https://www.dropbox.com/s/mjtxprvtpl052k8/ROBLOXCORPORATION.ROBLOX_2.582.384.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
+                bundles[581] = "https://www.dropbox.com/s/ba5fimzk14qqpeq/ROBLOXCORPORATION.ROBLOX_2.581.563.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
+                bundles[578] = "https://www.dropbox.com/s/5m857cpzcvwuy3c/ROBLOXCORPORATION.ROBLOX_2.578.564.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
 
                 Console.Title = "RBX Downgrader";
 
