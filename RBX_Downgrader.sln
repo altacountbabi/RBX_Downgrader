@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32104.313
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBX_Downgrader", "RBX_Downgrader.csproj", "{8A596646-8D95-4988-900E-8247339387BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A596646-8D95-4988-900E-8247339387BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A596646-8D95-4988-900E-8247339387BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A596646-8D95-4988-900E-8247339387BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A596646-8D95-4988-900E-8247339387BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EA88324-FDE4-4B68-8802-8DF59442A28A}
+	EndGlobalSection
+EndGlobal
