@@ -90,8 +90,8 @@ namespace RBX_Downgrader
 
 
                 AnsiConsole.Clear();
-                AnsiConsole.Markup($"Successfully downgraded to version {chosen_bundle}\nHave fun playing!\n\n\n[grey]Having any issues? dm me on discord: @whoman0385[/]");
-                // File.Delete($"bundles/{bundle_name}");
+                AnsiConsole.Markup($"Successfully downgraded to version {chosen_bundle}\nIf roblox shows you a screen with a \"Retry\" button, spam the button until it doesnt appear anymore\n\nHave fun playing!\n\n\n[grey]Having any issues? dm me on discord: @whoman0385[/]");
+                File.Delete($"bundles/{bundle_name}");
                 Console.ReadLine();
             } catch (Exception ex)
             {
