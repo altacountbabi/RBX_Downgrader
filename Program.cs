@@ -22,8 +22,8 @@ namespace RBX_Downgrader
                 };
 
                 // bundles[582] = "https://www.dropbox.com/s/mjtxprvtpl052k8/ROBLOXCORPORATION.ROBLOX_2.582.384.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
-                bundles[581] = "https://f52.workupload.com/download/vdMYdtnY3JG";
-                bundles[578] = "https://f73.workupload.com/download/QKu6KK8B36e";
+                bundles[581] = "https://files.catbox.moe/1kd5gv.Msixbundle";
+                bundles[578] = "https://files.catbox.moe/ixqjae.Msixbundle";
 
                 Console.Title = "RBX Downgrader";
 
@@ -90,8 +90,8 @@ namespace RBX_Downgrader
 
 
                 AnsiConsole.Clear();
-                AnsiConsole.WriteLine($"Successfully downgraded to version {chosen_bundle}\nHave fun playing!\n\n\n[grey]Having any issues? dm me on discord: @whoman0385[/]");
-                File.Delete($"bundles/{bundle_name}");
+                AnsiConsole.Markup($"Successfully downgraded to version {chosen_bundle}\nHave fun playing!\n\n\n[grey]Having any issues? dm me on discord: @whoman0385[/]");
+                // File.Delete($"bundles/{bundle_name}");
                 Console.ReadLine();
             } catch (Exception ex)
             {
