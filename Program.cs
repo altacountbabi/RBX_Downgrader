@@ -22,8 +22,8 @@ namespace RBX_Downgrader
                 };
 
                 // bundles[582] = "https://www.dropbox.com/s/mjtxprvtpl052k8/ROBLOXCORPORATION.ROBLOX_2.582.384.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
-                bundles[581] = "https://www.dropbox.com/s/ba5fimzk14qqpeq/ROBLOXCORPORATION.ROBLOX_2.581.563.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
-                bundles[578] = "https://www.dropbox.com/s/5m857cpzcvwuy3c/ROBLOXCORPORATION.ROBLOX_2.578.564.0_neutral_~_55nm5eh3cm0pr.Msixbundle?dl=1";
+                bundles[581] = "https://f52.workupload.com/download/vdMYdtnY3JG";
+                bundles[578] = "https://f73.workupload.com/download/QKu6KK8B36e";
 
                 Console.Title = "RBX Downgrader";
 
@@ -90,7 +90,7 @@ namespace RBX_Downgrader
 
 
                 AnsiConsole.Clear();
-                AnsiConsole.WriteLine($"Successfully downgraded to version {chosen_bundle}\nHave fun playing!");
+                AnsiConsole.WriteLine($"Successfully downgraded to version {chosen_bundle}\nHave fun playing!\n\n\n[grey]Having any issues? dm me on discord: @whoman0385[/]");
                 File.Delete($"bundles/{bundle_name}");
                 Console.ReadLine();
             } catch (Exception ex)
@@ -101,7 +101,7 @@ namespace RBX_Downgrader
                 AnsiConsole.WriteLine();
                 AnsiConsole.WriteLine();
 
-                AnsiConsole.WriteException(ex, ExceptionFormats.ShortenPaths | ExceptionFormats.ShortenTypes | ExceptionFormats.ShortenMethods | ExceptionFormats.ShowLinks);
+                Console.WriteLine(ex);
                 Console.ReadLine();
             }
         }
