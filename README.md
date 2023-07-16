@@ -1,3 +1,1 @@
-# Roblox Downgrader
-
-Simple tool to help you with downgrading roblox.
+# IM REWRITING IT IN RUST AND NO ONE CAN STOP ME RUST IS THE FUTURE AND THE FUTURE IS NOW
