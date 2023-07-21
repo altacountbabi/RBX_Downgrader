@@ -1,4 +1,7 @@
 {
-    "latestBundleUrl": "https://example.com/",
-    "latestBundleVersion": 582
+    "latestBundleUrls": {
+        "chunk0": "https://github.com/altacountbabi/msrbx_archive/raw/main/582/chunk0",
+        "chunk1": "https://github.com/altacountbabi/msrbx_archive/raw/main/582/chunk1"
+    },
+    "latestBundleVersion": 582,
 }
